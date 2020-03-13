@@ -36,7 +36,7 @@ function writePassword() {
 
   //check length is between 8 and 128
 
-  if (passLengthNum < 8 || passLengthNum > 128) {
+  if (passLengthNum < 8 || passLengthNum > 128 || isNaN(passLengthNum)) {
     var properLength = false;
     console.log(properLength)
     do {
